@@ -8,6 +8,7 @@ namespace CMD.DTO.Doctors
 {
     public class DoctorDTO
     {
+        public int DoctorId { get; set; }
         public string DoctorName { get; set; }
     }
 }

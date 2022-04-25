@@ -60,6 +60,10 @@
       <Project>{F53D8370-6F4D-46D0-B96C-DA786549C8A9}</Project>
       <Name>CMD.DbContextAll</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CMD.DTO.Doctors\CMD.DTO.Doctors.csproj">
+      <Project>{665A8954-8175-4457-9FC0-CBB78AE31156}</Project>
+      <Name>CMD.DTO.Doctors</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CMD.Model.Doctors\CMD.Model.Doctors.csproj">
       <Project>{4C8D7975-B511-4361-8E73-80B0C1812153}</Project>
       <Name>CMD.Model.Doctors</Name>

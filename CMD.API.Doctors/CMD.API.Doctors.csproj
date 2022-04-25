@@ -265,6 +265,10 @@
       <Project>{9293E7EF-CFC7-4518-AE0A-27E17A6DAA5E}</Project>
       <Name>CMD.Business.Doctors</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CMD.DTO.Doctors\CMD.DTO.Doctors.csproj">
+      <Project>{665A8954-8175-4457-9FC0-CBB78AE31156}</Project>
+      <Name>CMD.DTO.Doctors</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CMD.Model.Doctors\CMD.Model.Doctors.csproj">
       <Project>{4c8d7975-b511-4361-8e73-80b0c1812153}</Project>
       <Name>CMD.Model.Doctors</Name>

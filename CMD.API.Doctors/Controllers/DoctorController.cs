@@ -1,4 +1,5 @@
 ﻿using CMD.Business.Doctors;
+using CMD.DTO.Doctors;
 using CMD.Model.Doctors;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace CMD.API.Doctors.Controllers
 
 
         [HttpGet]
-        public List<Doctor> GetDoctorNames()
+        public List<DoctorDTO> GetDoctorNames()
         {
 
             return DoctorManager.GetDoctors();

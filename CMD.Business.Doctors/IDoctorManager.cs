@@ -1,4 +1,5 @@
-﻿using CMD.Model.Doctors;
+﻿using CMD.DTO.Doctors;
+using CMD.Model.Doctors;
 using CMD.Repository.Doctors;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,6 @@ namespace CMD.Business.Doctors
     public interface IDoctorManager
     {
         //IDoctorRepository DoctorRepository = new DoctorRepository();
-        List<Doctor> GetDoctors();
+        List<DoctorDTO> GetDoctors();
     }
 }
