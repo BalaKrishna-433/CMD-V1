@@ -13,7 +13,7 @@ namespace CMD.API.Doctors.Controllers
     [RoutePrefix("api/doctor")]
     public class DoctorController : ApiController
     {
-       private IDoctorManager DoctorManager = new DoctorManager();
+       private readonly IDoctorManager DoctorManager = new DoctorManager();
 
 
         [HttpGet]

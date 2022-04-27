@@ -35,8 +35,10 @@ namespace CMD.Repository.Appointments
         public bool RemoveRecommendation(int id)
         {
             var r = db.Recommendations.Find(id);
+            if (r == null) return false;  
             db.Recommendations.Remove(r);
             return db.SaveChanges() > 0;
+
         }
     }
 }
