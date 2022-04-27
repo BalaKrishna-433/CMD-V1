@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppointmentRepository.cs" />
+    <Compile Include="dummy.cs" />
     <Compile Include="IAppointmentRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -27,10 +27,7 @@ namespace CMD.Repository.Appointments
             return reco;
         }
 
-        //public ICollection<Recommendation> GetAllRecommendation()
-        //{
-        //    return db.Appointments.Include("Recommendation").Include("RecommendedDoctor").ToList();
-        //}
+       
 
         public bool RemoveRecommendation(int id)
         {

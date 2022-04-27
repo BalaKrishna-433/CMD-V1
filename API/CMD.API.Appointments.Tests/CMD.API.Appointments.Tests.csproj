@@ -115,17 +115,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CMD.Model.Appointments\CMD.Model.Appointments.csproj">
-      <Project>{d32e552b-75fa-4596-8bdd-7cbc985d4aca}</Project>
-      <Name>CMD.Model.Appointments</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\CMD.Model.Doctors\CMD.Model.Doctors.csproj">
-      <Project>{4C8D7975-B511-4361-8E73-80B0C1812153}</Project>
-      <Name>CMD.Model.Doctors</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\CMD.Repository.Appointments\CMD.Repository.Appointments.csproj">
-      <Project>{9d0647a1-14b9-46b2-abc4-9c25e9a27ae8}</Project>
-      <Name>CMD.Repository.Appointments</Name>
+    <ProjectReference Include="..\..\CMD.Repository\CMD.Repository.csproj">
+      <Project>{9BB9CCE4-93BA-4720-B302-A9433CE56139}</Project>
+      <Name>CMD.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

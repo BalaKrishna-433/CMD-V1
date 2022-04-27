@@ -62,12 +62,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CMD.API.Patients\CMD.API.Patients.csproj">
-      <Project>{07EBD61C-C9DA-41A1-8F4E-B5F1DD6E30CC}</Project>
-      <Name>CMD.API.Patients</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

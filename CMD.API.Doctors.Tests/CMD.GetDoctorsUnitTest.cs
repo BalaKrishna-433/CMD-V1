@@ -1,4 +1,4 @@
-﻿using CMD.Repository.Doctors;
+﻿using CMD.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -13,11 +13,11 @@ namespace CMD.API.Doctors.Tests
     public class CMD
     {
         
-        IDoctorRepository obj;
+        IRecommendationRepository obj;
         [TestInitialize]
         public void ObjectCreation()
         {
-            obj = new DoctorRepository();
+            obj = new RecommendationRepository();
             
         }
 

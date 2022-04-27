@@ -1,6 +1,5 @@
-﻿using CMD.Model.Appointments;
-using CMD.Model.Doctors;
-using CMD.Repository.Appointments;
+﻿
+using CMD.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -15,11 +14,11 @@ namespace CMD.API.Appointments.Tests
     public class CMD
     {
 
-        IAppointmentRepository obj;
+        IRecommendationRepository obj;
         [TestInitialize]
         public void ObjectCreation()
         {
-            obj = new   AppointmentRepository();
+            obj = new   RecommendationRepository();
 
         }
 
@@ -49,7 +48,7 @@ namespace CMD.API.Appointments.Tests
         [TestMethod]
         public void RemoveRecommendations_ShouldRemoveRecommendations()
         {
-            int id = 4;
+            int id = 8;
             var result = obj.RemoveRecommendation(id);
             Assert.IsTrue(result);
         }
