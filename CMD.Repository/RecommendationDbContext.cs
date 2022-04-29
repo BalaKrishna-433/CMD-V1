@@ -30,6 +30,10 @@ namespace CMD.Repository
         public virtual DbSet<Appointment> Appointments { get; set; }
         public virtual DbSet<Recommendations> Recommendations { get; set; }
 
+
+
+
+
     }
 
     //public class MyEntity

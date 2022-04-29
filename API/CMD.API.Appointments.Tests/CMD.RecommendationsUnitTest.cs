@@ -1,4 +1,5 @@
 ﻿
+using CMD.Model;
 using CMD.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
@@ -29,21 +30,37 @@ namespace CMD.API.Appointments.Tests
 
         }
 
+
+
+        [TestMethod]
+        public void AddRecommedations_ShouldAddRecommendations()
+        {
+            CMDDbContext db = new CMDDbContext();
+
+            var recommendation = new Recommendations();
+            var doctor = db.Doctors.Find(1);
+            recommendation.RecommendedDoctor = doctor;
+            recommendation.AppointmentId = 1;
+            var result = db.Recommendations.Add(recommendation);
+            Assert.IsNotNull(result);
+        }
+
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
         
+        public void AddRecommedations_withWrongData_ShouldnotAddRecommendations()
+        {
+            CMDDbContext db = new CMDDbContext();
 
-        //[TestMethod]
-        //public void AddRecommedations_ShouldAddRecommendations()
-        //{
-        //    var recommendation = new Recommendation();
-        //    Doctor doctor = new Doctor() { DoctorId = 1 };
-        //    reco.RecommendedDoctor = doctor;
-        //    Appointment appointment = db.Appointments.Find(reco.AppointmentId);
-        //    reco = db.Recommendations.Add(reco);
+            Recommendations recommendation = null;
+            
+            
+            var result = db.Recommendations.Add(recommendation);
+        }
 
-        //    var doc = obj.AddRecommendtaion(recommendation);
-        //    Assert.IsNotNull(doc);
 
-        //}
+
 
         [TestMethod]
         public void RemoveRecommendations_ShouldRemoveRecommendations()

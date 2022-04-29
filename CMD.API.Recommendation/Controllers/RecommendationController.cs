@@ -15,7 +15,12 @@ namespace CMD.API.Recommendation.Controllers
         [RoutePrefix("api/doctor")]
         public class DoctorController : ApiController
         {
-            private readonly IRecommendationManager RecommendationManagers = new RecommendationManager();
+            private readonly IRecommendationManager RecommendationManagers = null;
+
+            public DoctorController(IRecommendationManager recommendationManagers)
+            {
+                RecommendationManagers = recommendationManagers;
+            }
 
 
             [HttpGet]

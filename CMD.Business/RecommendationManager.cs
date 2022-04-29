@@ -11,7 +11,12 @@ namespace CMD.Business
 {
     public class RecommendationManager : IRecommendationManager
     {
-        IRecommendationRepository Repo = new RecommendationRepository();
+        protected IRecommendationRepository Repo = null;
+
+        public RecommendationManager(IRecommendationRepository recommendationRepository)
+        {
+            this.Repo = recommendationRepository;   
+        }
 
         public Recommendations AddRecommendtaion(Recommendations reco)
         {

@@ -12,7 +12,7 @@ namespace CMD.API.Doctors.Tests
     [TestClass]
     public class CMD
     {
-        
+        //IRecommendationRepository RecommendationRepository=new RecommendationRepository();
         IRecommendationRepository obj;
         [TestInitialize]
         public void ObjectCreation()

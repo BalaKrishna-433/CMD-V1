@@ -1,4 +1,5 @@
 using CMD.Business;
+using CMD.Repository;
 using System;
 
 using Unity;
@@ -43,6 +44,7 @@ namespace CMD.API.Recommendation
 
             // TODO: Register your type's mappings here.
              container.RegisterType<IRecommendationManager, RecommendationManager>();
+            container.RegisterType<IRecommendationRepository, RecommendationRepository>();
         }
     }
 }

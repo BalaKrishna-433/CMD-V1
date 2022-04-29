@@ -115,6 +115,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CMD.Model\CMD.Model.csproj">
+      <Project>{11CC4CAA-24EC-49DF-B662-C7501C97E3B6}</Project>
+      <Name>CMD.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\CMD.Repository\CMD.Repository.csproj">
       <Project>{9BB9CCE4-93BA-4720-B302-A9433CE56139}</Project>
       <Name>CMD.Repository</Name>

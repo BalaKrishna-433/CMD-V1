@@ -153,6 +153,10 @@
       <Project>{11cc4caa-24ec-49df-b662-c7501c97e3b6}</Project>
       <Name>CMD.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CMD.Repository\CMD.Repository.csproj">
+      <Project>{9BB9CCE4-93BA-4720-B302-A9433CE56139}</Project>
+      <Name>CMD.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
